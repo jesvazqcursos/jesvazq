@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos Tablas</title>
+   <style>
+            table
+        {
+            border-collapse: collapse; /* Los bordes de la tabla se pegarán (mejor aspecto) */
+            caption-side:top;
+        }
+            td,th /* Todas las celdas de la tabla... */
+        {
+            border: 1px solid black; /* tendrá un borde de 1 px */
+        
+        }
+        #tabla1{
+            background-color: aqua;
+        }
+   </style>
+</head>
+<body>
+    <section>
+  <H1>Varios ejemplos de tablas</H1>  
+  <a href="https://openclassrooms.com/en/courses/3339201-aprende-a-crear-tu-propio-sitio-web-con-html5-y-css3/3349864-tablas">fuente openclassrooms.com</a>
+ 
+  <div id="tabla1">
+  <h2>Tabla 1 <mark>Bordes</mark> </h2>
+  <table>
+    <tr>
+        <td>Carmen</td>
+        <td>33 years old</td>
+        <td>Spain</td>
+    </tr>
+    <tr>
+        <td>Michelle</td>
+        <td>26 years old</td>
+        <td>United States</td>
+    </tr>
+ 
+ </table>
+<br>
+<br>
+</div>
+<div id="tabla2">
+<h2>Tabla 2 <mark>encabezado (th)</mark> </h2>
+ <table>
+    <tr>
+        <th>Nombre</th>
+        <th>Edad</th>
+        <th>País</th>
+    </tr>
+ 
+     <tr>
+        <td>Carmen</td>
+        <td>33 años</td>
+        <td>España</td>
+    </tr>
+    <tr>
+        <td>Michelle</td>
+        <td>26 años</td>
+        <td>Estados Unidos</td>
+    </tr>
+ </table>
+<br>
+<br>
+</div>
+<div id="tabla3">
+<h2>Tabla 3 - <mark>Título de la tabla (caption)</mark> </h2>
+<table>
+    <caption>Passengers of flight 377</caption>
+ 
+     <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Country</th>
+    </tr>
+ 
+     <tr>
+        <td>Carmen</td>
+        <td>33 years old</td>
+        <td>Spain</td>
+    </tr>
+    <tr>
+        <td>Michelle</td>
+        <td>26 years old</td>
+        <td>United States</td>
+    </tr>
+ </table>
+
+<p>Ten en cuenta que puedes cambiar la posición del título mediante la propiedad de CSS caption-side, que puede tener hasta cuatro valores:</p>
+<ul>
+    <li>top: el título se situará encima de la tabla (por defecto)</li>
+
+    <li>bottom: el título se situará debajo de la tabla.</li>
+</ul>
+
+</div>
+<div id="tabla4">
+<h2>Tabla 4 <mark>Estructura de la tabla</mark> </h2>
+<ul> <!--partes de la tabla-->
+    <li>el encabezado (al principio): se define con las etiquetas<mark><code data-claire-semantic="html">&lt;thead&gt;&lt;/thead&gt;</code></mark></li>
+
+    <li>el cuerpo (en el centro): se define con las etiquetas <mark><code data-claire-semantic="html">&lt;tbody&gt;&lt;/tbody&gt;</code></mark></li>
+        
+    <li>el pie de tabla (al final): se define con las etiquetas <mark><code data-claire-semantic="html">&lt;tfoot&gt;&lt;/tfoot&gt;</code></mark></li>
+</ul>
+<table>
+    <caption>Pasajeros del vuelo 377</caption>
+ 
+    <thead> <!-- Pasajeros del vuelo 377 -->
+        <tr>
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th>País</th>
+        </tr>
+    </thead>
+ 
+    <tfoot> <!-- Pie de tabla -->
+        <tr>
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th>País</th>
+        </tr>
+    </tfoot>
+ 
+    <tbody> <!-- Cuerpo de la tabla -->
+        <tr>
+            <td>Carmen</td>
+            <td>33 años</td>
+            <td>España</td>
+       </tr>
+       <tr>
+            <td>Michelle</td>
+            <td>26 años</td>
+            <td>Estados Unidos</td>
+        </tr>
+        <tr>
+            <td>François</td>
+            <td>43 años</td>
+            <td>Francia</td>
+        </tr>
+        <tr>
+            <td>Martine</td>
+            <td>34 años</td>
+            <td>Francia</td>
+        </tr>
+        <tr>
+            <td>Jonathan</td>
+            <td>13 años</td>
+            <td>Australia</td>
+        </tr>
+        <tr>
+            <td>Xu</td>
+            <td>19 años</td>
+            <td>China</td>
+        </tr>
+    </tbody>
+ </table>
+</div>
+<div id="combinar_celdas">
+<h2>Combinar Celdas</h2>
+<p>Para combinar, se añade un atributo a la etiqueta <mark>&lt;td&gt;</mark>. Hay dos tipos de combinar:</p>
+
+    <ul><li><mark>Combinar columnas</mark>: es lo que acabamos de hacer en este ejemplo. Las celdas se combinan horizontalmente.</li></ul>
+
+<p>Se utiliza el atributo <mark>colspan</mark>.</p>
+<br>
+<table id="colspan">
+    <caption>unir filas: <mark>colspan</mark></caption>
+    <tr>
+        <th>Título de la película</th>
+        <th>¿Para niños?</th>
+        <th>¿Para adolescentes?</th>
+    </tr>
+    <tr>
+        <td>La matanza de Texas</td>
+        <td >No, demasiado violenta</td>
+        <td>Sí</td>
+    </tr>
+    <tr>
+        <td>Los osos amorosos se van a esquiar</td>
+        <td>Sí, apropiada</td>
+        <td>No hay violencia suficiente...</td>
+    </tr>
+    <tr>
+        <td>Lucky Luke el intrépido</td>
+        <td colspan="2">¡Para toda la familia!</td>
+    </tr>
+ </table>
+<br>
+
+<ul><li><mark>Combinar filas</mark>: en este caso, dos filas se combinan en una. Las celdas se combinan verticalmente.</li></ul>
+
+<p>Se utiliza el atributo <mark>rowspan</mark>.</p>
+
+<table id="rowspan">
+    <caption>unir filas: <mark>rowspan</mark></caption>
+    <tr>
+        <th>Título de la película</th>
+        <td>La matanza de Texas</td>
+        <td>Los osos amorosos se van a esquiar</td>
+        <td>Lucky Luke el intrépido</td>
+    </tr>
+    <tr>
+        <th>¿Para niños?</th>
+        <td>No, demasiado violenta</td>
+        <td>Sí, apropiada</td>
+        <td rowspan="2">¡Para toda la familia!</td>
+    </tr>
+    <tr>
+        <th>¿Para adolescentes?</th>
+        <td>Sí</td>
+        <td>No hay violencia suficiente...</td>
+    </tr>
+ </table>
+
+</div>
+
+<div id="resumen">
+    <h3>resumen</h3>
+<ul>
+    <li>Una tabla se inserta con la etiqueta <mark>&lt;table&gt;</mark> y se define fila por fila utilizando la etiqueta <mark>&lt;tr&gt;</mark>.</li>
+
+    <li> fila contiene celdas <mark>&lt;td&gt;</mark> (celdas normales) o<mark>&lt;th&gt;</mark> (celdas de encabezado).</li>
+
+    <li>El título de la tabla se define mediante <mark>&lt;caption&gt;</mark>.</li>
+
+    <li>Puedes añadir un borde a las celdas de la tabla mediante border. Para combinar bordes, se usa la propiedad de CSS border-collapse.</li>
+
+    <li>Una tabla puede dividirse en tres secciones: <mark>&lt;thead&gt;</mark> (encabezado), <mark>&lt;tbody&gt;</mark> (cuerpo) y <mark>&lt;tfoot&gt;</mark> (pie de la tabla). El uso de estas etiquetas no es obligatorio.</li>
+
+    <li>Puedes combinar celdas horizontalmente mediante el atributo colspan o verticalmente con rowspan. Tienes que especificar cuántas celdas tienen que combinarse.</li>
+</ul>
+</div>
+
+</section>
+</body>
+</html>

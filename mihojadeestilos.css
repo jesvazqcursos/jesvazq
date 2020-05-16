@@ -1,0 +1,34 @@
+html body section article header{
+    background-color: burlywood;
+}
+#cabeceraweb{
+    background-color: cadetblue;
+}
+
+#navegacionprincipal{
+    background-color: blueviolet;
+    padding:2px;
+}
+#barralateral{
+    background-color: chartreuse;
+    float: left;
+    height: 1020px;
+}
+
+
+#contenidoprincipal{
+    background-color: coral;
+    margin-left: 220px;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+#pieprincipal{
+    background-color: aqua;
+    clear: both;
+    margin-top: 130px;
+}
+li{
+    background-color: yellow;
+    display: inline;
+}
